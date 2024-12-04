@@ -1,0 +1,75 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.accordions{
+    width: 100%;
+}
+
+.accordions .acctitles{
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+
+    padding: 17px;
+    margin: 0 auto;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    transition: all .3s;
+
+    position: relative;
+}
+
+.accordions .acctitles:hover,.accordions .acctitles.active{
+    background-color: darkblue;
+}
+
+.accordions .acctitles::after{
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+
+    position: absolute;
+    right:15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+
+}
+
+.accordions .acctitles.active::after{
+    content: "\f2b6";
+}
+
+
+
+.acccontents{
+    height: 0px;
+    background-color: rgb(109, 246, 221);
+    font-size: 17px;
+
+    overflow:hidden;
+
+    text-indent: 50px;
+    text-align: justify;
+    
+}
+
+
+
+
+
+
+
+
+
+
